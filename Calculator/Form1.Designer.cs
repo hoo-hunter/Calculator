@@ -40,7 +40,7 @@ namespace Calculator
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(166, 52);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "Вычислить";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -49,9 +49,9 @@ namespace Calculator
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(376, 297);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
+            this.label1.Size = new System.Drawing.Size(57, 20);
             this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.label1.Text = "Ответ";
             // 
             // textBox1
             // 

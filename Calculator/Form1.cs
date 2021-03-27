@@ -62,16 +62,17 @@ namespace Calculator
                 summ.a = first;
                 summ.b = second;
 
-                first.num = summ.calc();
-                second.num = Parce(textBox1.Text);
+                summ.a = summ;
 
                 if (textBox1.Text == "")
                 {
                     label1.Text = Convert.ToString(summ.calc());
                     break;
                 }
+                second.num = Parce(textBox1.Text);
 
             }
+
         }
     }
 

@@ -54,23 +54,39 @@ namespace Calculator
                 return;
             }
 
-            Summ summ;
+            Summ summ = new Summ(); 
+            Summ summ2 = new Summ();
+
+            summ.a = first;
+            summ.b = second;
 
             while (textBox1.Text != "") 
             {
-                summ = new Summ();
-                summ.a = first;
-                summ.b = second;
+                summ2 = new Summ();
+                summ2.a = summ;
+                second = new Number();
+                second.num = Parce(textBox1.Text);
+                summ2.b = second;
 
-                summ.a = summ;
+                summ = new Summ();
+                summ.a = summ2;
+                second = new Number();
+                if (textBox1.Text != "")
+                {
+                    second.num = Parce(textBox1.Text);
+                    summ.b = second;
+                }
+                else
+                {
+                    second.num = 0;
+                    summ.b = second;
+                }
 
                 if (textBox1.Text == "")
                 {
                     label1.Text = Convert.ToString(summ.calc());
                     break;
                 }
-                second.num = Parce(textBox1.Text);
-
             }
 
         }
